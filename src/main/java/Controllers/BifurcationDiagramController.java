@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
-import lib.Counter;
+import lib.FixedPointMethod;
 
 import java.util.List;
 
@@ -35,7 +35,7 @@ public class BifurcationDiagramController {
 
         for (int i = 0; i < bifImg.getWidth(); i++) {
             double r = i / bifImg.getWidth() * (to - from) + from;
-            List<Double> points = Counter.getBifurcationLine(r, x0);
+            List<Double> points = FixedPointMethod.getBifurcationLine(r, x0);
             double[] line = new double[(int) bifImg.getHeight()];
             for (double p : points) {
                 int pix = (int) (bifImg.getHeight() - 1 - Math.round(p * (bifImg.getHeight() - 1)));

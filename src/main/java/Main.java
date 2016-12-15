@@ -19,7 +19,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("fxml/mainframe.fxml"));
-        primaryStage.setTitle("Conceptions of the modern natural science");
+        primaryStage.setTitle("CMNS");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }

@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.TextField;
-import lib.Counter;
+import lib.FixedPointMethod;
 
 import java.util.List;
 
@@ -29,7 +29,7 @@ public class FirstDiagramController {
             double r = Double.parseDouble(r1.getText());
             int iter = Integer.parseInt(iter1.getText());
 
-            List<Double> data = Counter.getLinear(x0, r, iter);
+            List<Double> data = FixedPointMethod.getLinear(x0, r, iter);
             XYChart.Series<Number, Number> series = new XYChart.Series<>();
             for (int i = 0; i < data.size(); i++) {
                 if (!Double.isFinite(data.get(i))) {

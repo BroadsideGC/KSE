@@ -6,7 +6,7 @@
          prefWidth="1800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8"
          xmlns:fx="http://javafx.com/fxml/1">
     <tabs>
-        <Tab text="Diagram #1">
+        <Tab text="Convergence chart">
             <content>
                 <AnchorPane prefHeight="400.0" prefWidth="400.0">
                     <children>
@@ -17,6 +17,7 @@
                 </AnchorPane>
             </content>
         </Tab>
+        <!--
         <Tab text="Diagram #2">
             <content>
                 <AnchorPane prefHeight="400.0" prefWidth="400.0">
@@ -28,6 +29,7 @@
                 </AnchorPane>
             </content>
         </Tab>
+        -->
         <Tab text="Bifurcation diagram">
             <content>
                 <AnchorPane prefHeight="400.0" prefWidth="400.0">

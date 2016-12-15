@@ -5,7 +5,7 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
-import lib.Counter;
+import lib.FixedPointMethod;
 
 import java.util.List;
 
@@ -94,7 +94,7 @@ public class SecondDiagramController {
         coord.drawLine(-3, -3, 3, 3);
         coord.drawParabola(-3, 3, -r, r, 0);
         canvas.getGraphicsContext2D().setStroke(Color.RED);
-        List<Double> points = Counter.getLinear(x0, r, 100);
+        List<Double> points = FixedPointMethod.getLinear(x0, r, 100);
         for (int i = 0; i < points.size() - 2; i++) {
             double p1 = points.get(i);
             double p2 = points.get(i + 1);
